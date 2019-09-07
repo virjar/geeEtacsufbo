@@ -1,0 +1,45 @@
+{
+  "name": "esprima_support",
+  "version": "1.1.1",
+  "description": "A simple deobfuscator",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "make test-all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ChiChou/etacsufbo.git"
+  },
+  "bin": {
+    "deobfuscate": "cli.js"
+  },
+  "keywords": [
+    "obfuscate",
+    "beautify",
+    "javascript"
+  ],
+  "engines": {
+    "node": ">4.0"
+  },
+  "author": "ChiChou <zhi.zhou@chaitin.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChiChou/etacsufbo/issues"
+  },
+  "homepage": "https://github.com/ChiChou/etacsufbo",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "coveralls": "^2.11.3",
+    "istanbul": "^0.4.2",
+    "jshint": "^2.8.0",
+    "mocha": "^2.2.5"
+  },
+  "dependencies": {
+    "colors": "^1.1.2",
+    "escodegen": "^1.6.1",
+    "esprima": "^2.4.1"
+  }
+}
