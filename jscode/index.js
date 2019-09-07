@@ -1,7 +1,10 @@
 'use strict';
+const fs = require('fs');
+require('colors');
+const escodegen = require('escodegen');
 
-var source_json = "Users/virjar/git/gt2/src/main/webapp/static/js/geetest.6.0.9_beauty_02.json";
-var dst = "/Users/virjar/git/gt2/src/main/webapp/static/js/geetest.6.0.9_beauty_02.js";
+var source_json = "/Users/virjar/git/geeEtacsufbo/jscode/resources/geetest.6.0.9_beauty.json";
+var dst = "/Users/virjar/git/geeEtacsufbo/jscode/resources/geetest.6.0.9_beauty.js";
 
 let ast_json_string = fs.readFileSync(source_json).toString('utf8');
 let ast = JSON.parse(ast_json_string);

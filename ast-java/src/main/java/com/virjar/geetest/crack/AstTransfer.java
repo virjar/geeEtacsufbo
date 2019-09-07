@@ -27,7 +27,7 @@ public class AstTransfer {
     public static void main(String[] args) throws IOException {
 
         FileInputStream fileInputStream = new FileInputStream(
-                new File("/Users/virjar/git/gt2/src/main/webapp/static/js/geetest.6.0.9.json"));
+                new File("/Users/virjar/git/geeEtacsufbo/jscode/resources/geetest.6.0.9.json"));
 
         String s = IOUtils.toString(fileInputStream, Charsets.UTF_8);
         IOUtils.closeQuietly(fileInputStream);
@@ -41,7 +41,7 @@ public class AstTransfer {
         Files.write(
                 JSONObject.toJSONString(ast, SerializerFeature.WriteMapNullValue,
                         SerializerFeature.DisableCircularReferenceDetect),
-                new File("/Users/virjar/git/gt2/src/main/webapp/static/js/geetest.6.0.9_beauty_02.json"),
+                new File("/Users/virjar/git/geeEtacsufbo/jscode/resources/geetest.6.0.9_beauty.json"),
                 Charsets.UTF_8);
     }
 
